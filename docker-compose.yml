@@ -1,0 +1,14 @@
+services:
+  app:
+    container_name: ${PROJECT_NAME}
+    build: .
+    restart: always
+    ports:
+      - "${HOST_PORT}:3000"
+    env_file:
+      - .env
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
