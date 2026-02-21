@@ -9,6 +9,9 @@ out
 dist
 build
 
+# docs
+docs
+
 # env
 .env
 .env.local

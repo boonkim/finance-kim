@@ -1,11 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+@layer utilities {
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
 }
