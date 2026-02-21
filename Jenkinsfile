@@ -2,8 +2,8 @@ pipeline {
     agent any
     environment {
         // --- ส่วนที่ต้องแก้ทุกครั้งที่ขึ้นโปรเจกต์ใหม่ ---
-        PROJECT_NAME = 'pi5-nextjs-starter'
-        HOST_PORT = '3001'
+        PROJECT_NAME = 'fin-kim-wtf'
+        HOST_PORT = '4242'
         HOST_ENV_PATH = "/home/symfy/projects/${PROJECT_NAME}/.env"
         // ---------------------------------------
         DISCORD_WEBHOOK = 'https://discord.com/api/webhooks/1474638647767859331/bHuss5jKHE4JZAG6sEf0rX72ksykDstkC1N-G3F2FJOg5zsK0exUPpyvC2EP-hUQaBTd'
